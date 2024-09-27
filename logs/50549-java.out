@@ -1,0 +1,416 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+{"logLevel":"debug","message":"gauge-java took 716milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 716"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 62067"}
+{"logLevel":"info","message":"Listening on port:62067"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'base.Swipe.openNotificationsBarSwipe' and 'base.Swipe.openNotificationsBarSwipe'"}
+{"logLevel":"debug","message":"Found Open notifications bar by swiping down in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.example.BaseMethods.checkElementVisibility' and 'com.example.BaseMethods.checkElementVisibility'"}
+{"logLevel":"debug","message":"Found Check element existence {} must be {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.Swipe.closeNotificationsBarSwipe' and 'base.Swipe.closeNotificationsBarSwipe'"}
+{"logLevel":"debug","message":"Found Close notifications bar by swiping down in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.example.BaseMethods.longPress' and 'com.example.BaseMethods.longPress'"}
+{"logLevel":"debug","message":"Found Long press on element {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.example.BaseMethods.findElementWithHorizontalSwipe' and 'com.example.BaseMethods.findElementWithHorizontalSwipe'"}
+{"logLevel":"debug","message":"Found Search Element {} with Horizontal Swipe {} times in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.example.BaseMethods.captureNotification' and 'com.example.BaseMethods.captureNotification'"}
+{"logLevel":"debug","message":"Found Get text and title value from Notifications and store it in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.example.BaseMethods.createWebElement' and 'com.example.BaseMethods.createWebElement'"}
+{"logLevel":"debug","message":"Found Check element existence {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.example.BaseMethods.writeTextToInputArea' and 'com.example.BaseMethods.writeTextToInputArea'"}
+{"logLevel":"debug","message":"Found Write text {} to this element {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.example.BaseMethods.checkNotificationsElement' and 'com.example.BaseMethods.checkNotificationsElement'"}
+{"logLevel":"debug","message":"Found Check Notifications title and text values in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.Swipe.swipeWithoutDirection' and 'base.Swipe.swipeWithoutDirection'"}
+{"logLevel":"debug","message":"Found Swipe in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.example.BaseMethods.findElementWithSwipe' and 'com.example.BaseMethods.findElementWithSwipe'"}
+{"logLevel":"debug","message":"Found Search Element {} with Swipe {} times in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.Swipe.swipe' and 'base.Swipe.swipe'"}
+{"logLevel":"debug","message":"Found Swipe {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.Swipe.swipeWithoutDirection' and 'base.Swipe.swipeWithoutDirection'"}
+{"logLevel":"debug","message":"Found Swipe {} times in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.example.BaseMethods.clickButton' and 'com.example.BaseMethods.clickButton'"}
+{"logLevel":"debug","message":"Found Click button {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.Swipe.swipeByCoordinate' and 'base.Swipe.swipeByCoordinate'"}
+{"logLevel":"debug","message":"Found Swipe from coordinates {}, {} to {}, {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.example.BaseMethods.getTextValueFromElement' and 'com.example.BaseMethods.getTextValueFromElement'"}
+{"logLevel":"debug","message":"Found Get Text Value from {} and compare with {} in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\tSwipe {} times : public void swipeWithoutDirection(ınt repeatCount)"}
+{"logLevel":"debug","message":"\tSwipe {} : public void swipe(SwipeDirection direction)"}
+{"logLevel":"debug","message":"\tWrite text {} to this element {} : public void writeTextToInputArea(String text, String ElementName)"}
+{"logLevel":"debug","message":"\tSwipe from coordinates {}, {} to {}, {} : public void swipeByCoordinate(ınt startX, ınt startY, ınt endX, ınt endY)"}
+{"logLevel":"debug","message":"\tCheck element existence {} : public WebElement createWebElement(String ElementName)"}
+{"logLevel":"debug","message":"\tSearch Element {} with Horizontal Swipe {} times : public WebElement findElementWithHorizontalSwipe(String ElementName, ınt retries)"}
+{"logLevel":"debug","message":"\tCheck Notifications title and text values : public void checkNotificationsElement()"}
+{"logLevel":"debug","message":"\tOpen notifications bar by swiping down : public void openNotificationsBarSwipe()"}
+{"logLevel":"debug","message":"\tSearch Element {} with Swipe {} times : public WebElement findElementWithSwipe(String ElementName, ınt retries)"}
+{"logLevel":"debug","message":"\tCheck element existence {} must be {} : public void checkElementVisibility(String ElementName, Visibility status)"}
+{"logLevel":"debug","message":"\tGet Text Value from {} and compare with {} : public void getTextValueFromElement(String elementName, String expectedValue)"}
+{"logLevel":"debug","message":"\tSwipe : public void swipeWithoutDirection()"}
+{"logLevel":"debug","message":"\tGet text and title value from Notifications and store it : public void captureNotification()"}
+{"logLevel":"debug","message":"\tClose notifications bar by swiping down : public void closeNotificationsBarSwipe()"}
+{"logLevel":"debug","message":"\tClick button {} : public void clickButton(String ElementName)"}
+{"logLevel":"debug","message":"\tLong press on element {} : public void longPress(String elementName)"}
+Successfully connected to Appium server on port 4723
+Appium server is already running.
+Android device found: emulator-5554
+Creating capabilities for Android
+Saved the capabilities to deviceProperties/capabilities.xml
+Eyl 27, 2024 9:04:42 ÖS base.Base initializeDriver
+INFO: Initializing driver with capabilities: Capabilities {app: /Users/testinium/AquaProjec..., appActivity: io.appium.android.apis.ApiD..., appPackage: io.appium.android.apis, appPath: /Users/testinium/AquaProjec..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: false, platformName: ANDROID}
+{"logLevel":"debug","message":"Executing 'Click button {}' using 'class com.example.BaseMethods.clickButton"}
+Eyl 27, 2024 9:04:53 ÖS com.example.BaseMethods createWebElement
+INFO: App
+Eyl 27, 2024 9:04:53 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: App
+Eyl 27, 2024 9:04:54 ÖS com.example.BaseMethods clickButton
+INFO: Clicked on the button: App
+{"logLevel":"debug","message":"Executing 'Click button {}' using 'class com.example.BaseMethods.clickButton"}
+Eyl 27, 2024 9:04:56 ÖS com.example.BaseMethods createWebElement
+INFO: Activity
+Eyl 27, 2024 9:04:56 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: Activity
+Eyl 27, 2024 9:04:57 ÖS com.example.BaseMethods clickButton
+INFO: Clicked on the button: Activity
+{"logLevel":"debug","message":"Executing 'Click button {}' using 'class com.example.BaseMethods.clickButton"}
+Eyl 27, 2024 9:04:59 ÖS com.example.BaseMethods createWebElement
+INFO: Custom Title
+Eyl 27, 2024 9:04:59 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: Custom Title
+Eyl 27, 2024 9:05:01 ÖS com.example.BaseMethods clickButton
+INFO: Clicked on the button: Custom Title
+{"logLevel":"debug","message":"Executing 'Write text {} to this element {}' using 'class com.example.BaseMethods.writeTextToInputArea"}
+Eyl 27, 2024 9:05:01 ÖS com.example.BaseMethods createWebElement
+INFO: Left is best
+Eyl 27, 2024 9:05:01 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: left_text_edit
+{"logLevel":"debug","message":"Executing 'Click button {}' using 'class com.example.BaseMethods.clickButton"}
+Eyl 27, 2024 9:05:03 ÖS com.example.BaseMethods createWebElement
+INFO: Change Left
+Eyl 27, 2024 9:05:03 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: Change Left
+Eyl 27, 2024 9:05:03 ÖS com.example.BaseMethods clickButton
+INFO: Clicked on the button: Change Left
+{"logLevel":"debug","message":"Executing 'Get Text Value from {} and compare with {}' using 'class com.example.BaseMethods.getTextValueFromElement"}
+Eyl 27, 2024 9:05:03 ÖS com.example.BaseMethods createWebElement
+INFO: Left isnt always cool
+Eyl 27, 2024 9:05:03 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: left_text
+Eyl 27, 2024 9:05:03 ÖS com.example.BaseMethods getTextValueFromElement
+INFO: Success: The value of 'left_text' matches the expected value.
+{"logLevel":"debug","message":"Executing 'Write text {} to this element {}' using 'class com.example.BaseMethods.writeTextToInputArea"}
+Eyl 27, 2024 9:05:04 ÖS com.example.BaseMethods createWebElement
+INFO: Right is always right
+Eyl 27, 2024 9:05:04 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: right_text_edit
+{"logLevel":"debug","message":"Executing 'Click button {}' using 'class com.example.BaseMethods.clickButton"}
+Eyl 27, 2024 9:05:05 ÖS com.example.BaseMethods createWebElement
+INFO: Change Right
+Eyl 27, 2024 9:05:05 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: Change Right
+Eyl 27, 2024 9:05:05 ÖS com.example.BaseMethods clickButton
+INFO: Clicked on the button: Change Right
+{"logLevel":"debug","message":"Executing 'Get Text Value from {} and compare with {}' using 'class com.example.BaseMethods.getTextValueFromElement"}
+Eyl 27, 2024 9:05:06 ÖS com.example.BaseMethods createWebElement
+INFO: Right better than left
+Eyl 27, 2024 9:05:06 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: right_text
+Eyl 27, 2024 9:05:06 ÖS com.example.BaseMethods getTextValueFromElement
+INFO: Success: The value of 'right_text' matches the expected value.
+Eyl 27, 2024 9:05:06 ÖS base.Base afterScenario
+INFO: ------------ Scenario is ending ------------
+Eyl 27, 2024 9:05:07 ÖS base.Base afterScenario
+INFO: Driver quit successfully.
+Successfully connected to Appium server on port 4723
+Appium server is already running.
+Android device found: emulator-5554
+Creating capabilities for Android
+Saved the capabilities to deviceProperties/capabilities.xml
+Eyl 27, 2024 9:05:07 ÖS base.Base initializeDriver
+INFO: Initializing driver with capabilities: Capabilities {app: /Users/testinium/AquaProjec..., appActivity: io.appium.android.apis.ApiD..., appPackage: io.appium.android.apis, appPath: /Users/testinium/AquaProjec..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: false, platformName: ANDROID}
+{"logLevel":"debug","message":"Executing 'Click button {}' using 'class com.example.BaseMethods.clickButton"}
+Eyl 27, 2024 9:05:15 ÖS com.example.BaseMethods createWebElement
+INFO: App
+Eyl 27, 2024 9:05:15 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: App
+Eyl 27, 2024 9:05:16 ÖS com.example.BaseMethods clickButton
+INFO: Clicked on the button: App
+{"logLevel":"debug","message":"Executing 'Click button {}' using 'class com.example.BaseMethods.clickButton"}
+Eyl 27, 2024 9:05:17 ÖS com.example.BaseMethods createWebElement
+INFO: Alert Dialogs
+Eyl 27, 2024 9:05:17 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: Alert Dialogs
+Eyl 27, 2024 9:05:18 ÖS com.example.BaseMethods clickButton
+INFO: Clicked on the button: Alert Dialogs
+{"logLevel":"debug","message":"Executing 'Click button {}' using 'class com.example.BaseMethods.clickButton"}
+Eyl 27, 2024 9:05:18 ÖS com.example.BaseMethods createWebElement
+INFO: List dialog
+Eyl 27, 2024 9:05:18 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: List dialog
+Eyl 27, 2024 9:05:18 ÖS com.example.BaseMethods clickButton
+INFO: Clicked on the button: List dialog
+{"logLevel":"debug","message":"Executing 'Click button {}' using 'class com.example.BaseMethods.clickButton"}
+Eyl 27, 2024 9:05:20 ÖS com.example.BaseMethods createWebElement
+INFO: Command one
+Eyl 27, 2024 9:05:20 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: Command one
+Eyl 27, 2024 9:05:21 ÖS com.example.BaseMethods clickButton
+INFO: Clicked on the button: Command one
+{"logLevel":"debug","message":"Executing 'Check element existence {} must be {}' using 'class com.example.BaseMethods.checkElementVisibility"}
+Eyl 27, 2024 9:05:21 ÖS com.example.BaseMethods createWebElement
+INFO: You selected: 0 , Command one
+Eyl 27, 2024 9:05:21 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: You selected: 0 , Command one
+Eyl 27, 2024 9:05:21 ÖS base.Base afterScenario
+INFO: ------------ Scenario is ending ------------
+Eyl 27, 2024 9:05:22 ÖS base.Base afterScenario
+INFO: Driver quit successfully.
+Successfully connected to Appium server on port 4723
+Appium server is already running.
+Android device found: emulator-5554
+Creating capabilities for Android
+Saved the capabilities to deviceProperties/capabilities.xml
+Eyl 27, 2024 9:05:22 ÖS base.Base initializeDriver
+INFO: Initializing driver with capabilities: Capabilities {app: /Users/testinium/AquaProjec..., appActivity: io.appium.android.apis.ApiD..., appPackage: io.appium.android.apis, appPath: /Users/testinium/AquaProjec..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: false, platformName: ANDROID}
+{"logLevel":"debug","message":"Executing 'Click button {}' using 'class com.example.BaseMethods.clickButton"}
+Eyl 27, 2024 9:05:29 ÖS com.example.BaseMethods createWebElement
+INFO: App
+Eyl 27, 2024 9:05:29 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: App
+Eyl 27, 2024 9:05:30 ÖS com.example.BaseMethods clickButton
+INFO: Clicked on the button: App
+{"logLevel":"debug","message":"Executing 'Click button {}' using 'class com.example.BaseMethods.clickButton"}
+Eyl 27, 2024 9:05:30 ÖS com.example.BaseMethods createWebElement
+INFO: Fragment
+Eyl 27, 2024 9:05:30 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: Fragment
+Eyl 27, 2024 9:05:32 ÖS com.example.BaseMethods clickButton
+INFO: Clicked on the button: Fragment
+{"logLevel":"debug","message":"Executing 'Click button {}' using 'class com.example.BaseMethods.clickButton"}
+Eyl 27, 2024 9:05:32 ÖS com.example.BaseMethods createWebElement
+INFO: Context Menu
+Eyl 27, 2024 9:05:32 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: Context Menu
+Eyl 27, 2024 9:05:32 ÖS com.example.BaseMethods clickButton
+INFO: Clicked on the button: Context Menu
+{"logLevel":"debug","message":"Executing 'Long press on element {}' using 'class com.example.BaseMethods.longPress"}
+Eyl 27, 2024 9:05:34 ÖS com.example.BaseMethods createWebElement
+INFO: Long press me
+Eyl 27, 2024 9:05:34 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: Long press me
+{"logLevel":"debug","message":"Executing 'Check element existence {} must be {}' using 'class com.example.BaseMethods.checkElementVisibility"}
+Eyl 27, 2024 9:05:36 ÖS com.example.BaseMethods createWebElement
+INFO: Menu A
+Eyl 27, 2024 9:05:36 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: Menu A
+{"logLevel":"debug","message":"Executing 'Check element existence {} must be {}' using 'class com.example.BaseMethods.checkElementVisibility"}
+Eyl 27, 2024 9:05:37 ÖS com.example.BaseMethods createWebElement
+INFO: Menu B
+Eyl 27, 2024 9:05:37 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: Menu B
+Eyl 27, 2024 9:05:37 ÖS base.Base afterScenario
+INFO: ------------ Scenario is ending ------------
+Eyl 27, 2024 9:05:37 ÖS base.Base afterScenario
+INFO: Driver quit successfully.
+Successfully connected to Appium server on port 4723
+Appium server is already running.
+Android device found: emulator-5554
+Creating capabilities for Android
+Saved the capabilities to deviceProperties/capabilities.xml
+Eyl 27, 2024 9:05:37 ÖS base.Base initializeDriver
+INFO: Initializing driver with capabilities: Capabilities {app: /Users/testinium/AquaProjec..., appActivity: io.appium.android.apis.ApiD..., appPackage: io.appium.android.apis, appPath: /Users/testinium/AquaProjec..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: false, platformName: ANDROID}
+{"logLevel":"debug","message":"Executing 'Click button {}' using 'class com.example.BaseMethods.clickButton"}
+Eyl 27, 2024 9:05:44 ÖS com.example.BaseMethods createWebElement
+INFO: App
+Eyl 27, 2024 9:05:44 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: App
+Eyl 27, 2024 9:05:46 ÖS com.example.BaseMethods clickButton
+INFO: Clicked on the button: App
+{"logLevel":"debug","message":"Executing 'Click button {}' using 'class com.example.BaseMethods.clickButton"}
+Eyl 27, 2024 9:05:46 ÖS com.example.BaseMethods createWebElement
+INFO: Fragment
+Eyl 27, 2024 9:05:46 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: Fragment
+Eyl 27, 2024 9:05:46 ÖS com.example.BaseMethods clickButton
+INFO: Clicked on the button: Fragment
+{"logLevel":"debug","message":"Executing 'Click button {}' using 'class com.example.BaseMethods.clickButton"}
+Eyl 27, 2024 9:05:48 ÖS com.example.BaseMethods createWebElement
+INFO: Hide and Show
+Eyl 27, 2024 9:05:48 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: Hide and Show
+Eyl 27, 2024 9:05:48 ÖS com.example.BaseMethods clickButton
+INFO: Clicked on the button: Hide and Show
+{"logLevel":"debug","message":"Executing 'Check element existence {} must be {}' using 'class com.example.BaseMethods.checkElementVisibility"}
+Eyl 27, 2024 9:05:49 ÖS com.example.BaseMethods createWebElement
+INFO: The fragment saves and restores this text.
+Eyl 27, 2024 9:05:49 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: The fragment saves and restores this text.
+{"logLevel":"debug","message":"Executing 'Get Text Value from {} and compare with {}' using 'class com.example.BaseMethods.getTextValueFromElement"}
+Eyl 27, 2024 9:05:49 ÖS com.example.BaseMethods createWebElement
+INFO: Hide
+Eyl 27, 2024 9:05:49 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: frag1hide
+Eyl 27, 2024 9:05:50 ÖS com.example.BaseMethods getTextValueFromElement
+INFO: Success: The value of 'frag1hide' matches the expected value.
+{"logLevel":"debug","message":"Executing 'Click button {}' using 'class com.example.BaseMethods.clickButton"}
+Eyl 27, 2024 9:05:50 ÖS com.example.BaseMethods createWebElement
+INFO: Hide
+Eyl 27, 2024 9:05:50 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: frag1hide
+Eyl 27, 2024 9:05:50 ÖS com.example.BaseMethods clickButton
+INFO: Clicked on the button: frag1hide
+{"logLevel":"debug","message":"Executing 'Check element existence {} must be {}' using 'class com.example.BaseMethods.checkElementVisibility"}
+Eyl 27, 2024 9:05:51 ÖS base.Base afterScenario
+INFO: ------------ Scenario is ending ------------
+Eyl 27, 2024 9:05:51 ÖS base.Base afterScenario
+INFO: Driver quit successfully.
+Successfully connected to Appium server on port 4723
+Appium server is already running.
+Android device found: emulator-5554
+Creating capabilities for Android
+Saved the capabilities to deviceProperties/capabilities.xml
+Eyl 27, 2024 9:05:52 ÖS base.Base initializeDriver
+INFO: Initializing driver with capabilities: Capabilities {app: /Users/testinium/AquaProjec..., appActivity: io.appium.android.apis.ApiD..., appPackage: io.appium.android.apis, appPath: /Users/testinium/AquaProjec..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: false, platformName: ANDROID}
+{"logLevel":"debug","message":"Executing 'Click button {}' using 'class com.example.BaseMethods.clickButton"}
+Eyl 27, 2024 9:05:59 ÖS com.example.BaseMethods createWebElement
+INFO: App
+Eyl 27, 2024 9:05:59 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: App
+Eyl 27, 2024 9:06:00 ÖS com.example.BaseMethods clickButton
+INFO: Clicked on the button: App
+{"logLevel":"debug","message":"Executing 'Click button {}' using 'class com.example.BaseMethods.clickButton"}
+Eyl 27, 2024 9:06:01 ÖS com.example.BaseMethods createWebElement
+INFO: Notification
+Eyl 27, 2024 9:06:01 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: Notification
+Eyl 27, 2024 9:06:03 ÖS com.example.BaseMethods clickButton
+INFO: Clicked on the button: Notification
+{"logLevel":"debug","message":"Executing 'Click button {}' using 'class com.example.BaseMethods.clickButton"}
+Eyl 27, 2024 9:06:03 ÖS com.example.BaseMethods createWebElement
+INFO: IncomingMessage
+Eyl 27, 2024 9:06:03 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: IncomingMessage
+Eyl 27, 2024 9:06:03 ÖS com.example.BaseMethods clickButton
+INFO: Clicked on the button: IncomingMessage
+{"logLevel":"debug","message":"Executing 'Click button {}' using 'class com.example.BaseMethods.clickButton"}
+Eyl 27, 2024 9:06:05 ÖS com.example.BaseMethods createWebElement
+INFO: Show App Notification
+Eyl 27, 2024 9:06:05 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: Show App Notification
+Eyl 27, 2024 9:06:05 ÖS com.example.BaseMethods clickButton
+INFO: Clicked on the button: Show App Notification
+{"logLevel":"debug","message":"Executing 'Open notifications bar by swiping down' using 'class base.Swipe.openNotificationsBarSwipe"}
+{"logLevel":"debug","message":"Executing 'Get text and title value from Notifications and store it' using 'class com.example.BaseMethods.captureNotification"}
+Eyl 27, 2024 9:06:07 ÖS com.example.BaseMethods createWebElement
+INFO: Joe
+Eyl 27, 2024 9:06:07 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: xpath.//android.widget.FrameLayout[.//android.widget.TextView[@resource-id='android:id/app_name_text' and @text='API Demos']]//android.widget.TextView[@resource-id='android:id/title']
+Eyl 27, 2024 9:06:08 ÖS com.example.BaseMethods createWebElement
+INFO: r u hungry?  i am starved
+Eyl 27, 2024 9:06:08 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: xpath.//android.widget.FrameLayout[.//android.widget.TextView[@resource-id='android:id/app_name_text' and @text='API Demos']]//android.widget.TextView[@resource-id='android:id/text']
+Eyl 27, 2024 9:06:08 ÖS com.example.BaseMethods captureNotification
+INFO: Notification title: Joe
+Eyl 27, 2024 9:06:08 ÖS com.example.BaseMethods captureNotification
+INFO: Notification text: r u hungry?  i am starved
+{"logLevel":"debug","message":"Executing 'Click button {}' using 'class com.example.BaseMethods.clickButton"}
+Eyl 27, 2024 9:06:08 ÖS com.example.BaseMethods createWebElement
+INFO: 
+Eyl 27, 2024 9:06:08 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: status_bar_latest_event_content
+Eyl 27, 2024 9:06:08 ÖS com.example.BaseMethods clickButton
+INFO: Clicked on the button: status_bar_latest_event_content
+{"logLevel":"debug","message":"Executing 'Check Notifications title and text values' using 'class com.example.BaseMethods.checkNotificationsElement"}
+Eyl 27, 2024 9:06:09 ÖS base.Base afterScenario
+INFO: ------------ Scenario is ending ------------
+Eyl 27, 2024 9:06:10 ÖS base.Base afterScenario
+INFO: Driver quit successfully.
+Successfully connected to Appium server on port 4723
+Appium server is already running.
+Android device found: emulator-5554
+Creating capabilities for Android
+Saved the capabilities to deviceProperties/capabilities.xml
+Eyl 27, 2024 9:06:10 ÖS base.Base handleReinstallIfNeeded
+INFO: App will be reinstalled from path: /Users/testinium/AquaProjects/TeknasyonMobileUI/ApkFiles/ApiDemos.apk
+Eyl 27, 2024 9:06:10 ÖS base.Base initializeDriver
+INFO: Initializing driver with capabilities: Capabilities {app: /Users/testinium/AquaProjec..., appActivity: io.appium.android.apis.ApiD..., appPackage: io.appium.android.apis, appPath: /Users/testinium/AquaProjec..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: true, noReset: false, platformName: ANDROID}
+{"logLevel":"debug","message":"Executing 'Click button {}' using 'class com.example.BaseMethods.clickButton"}
+Eyl 27, 2024 9:06:19 ÖS com.example.BaseMethods createWebElement
+INFO: Views
+Eyl 27, 2024 9:06:19 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: Views
+Eyl 27, 2024 9:06:21 ÖS com.example.BaseMethods clickButton
+INFO: Clicked on the button: Views
+{"logLevel":"debug","message":"Executing 'Search Element {} with Swipe {} times' using 'class com.example.BaseMethods.findElementWithSwipe"}
+Eyl 27, 2024 9:06:25 ÖS com.example.BaseMethods findElementWithSwipe
+INFO: Element not found, retrying...
+Eyl 27, 2024 9:06:29 ÖS com.example.BaseMethods findElementWithSwipe
+INFO: Element not found, retrying...
+Eyl 27, 2024 9:06:33 ÖS com.example.BaseMethods findElementWithSwipe
+INFO: Element not found, retrying...
+Eyl 27, 2024 9:06:36 ÖS com.example.BaseMethods findElementWithSwipe
+INFO: Element not found, retrying...
+Eyl 27, 2024 9:06:37 ÖS com.example.BaseMethods createWebElementForRetry
+INFO: Tabs
+Eyl 27, 2024 9:06:37 ÖS com.example.BaseMethods createWebElementForRetry
+INFO: Element is found: Tabs
+Eyl 27, 2024 9:06:37 ÖS com.example.BaseMethods findElementWithSwipe
+INFO: -------------------------------[[AndroidDriver:  on ANDROID (681a05ca-5232-46fd-9bb1-b5371d740274)] -> xpath: //*[contains(@resource-id,'Tabs') or contains(@text ,'Tabs')]]-----------------------------------
+Eyl 27, 2024 9:06:38 ÖS com.example.BaseMethods findElementWithSwipe
+INFO: Element found: [[AndroidDriver:  on ANDROID (681a05ca-5232-46fd-9bb1-b5371d740274)] -> xpath: //*[contains(@resource-id,'Tabs') or contains(@text ,'Tabs')]]
+{"logLevel":"debug","message":"Executing 'Click button {}' using 'class com.example.BaseMethods.clickButton"}
+Eyl 27, 2024 9:06:38 ÖS com.example.BaseMethods createWebElement
+INFO: Tabs
+Eyl 27, 2024 9:06:38 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: Tabs
+Eyl 27, 2024 9:06:39 ÖS com.example.BaseMethods clickButton
+INFO: Clicked on the button: Tabs
+{"logLevel":"debug","message":"Executing 'Click button {}' using 'class com.example.BaseMethods.clickButton"}
+Eyl 27, 2024 9:06:40 ÖS com.example.BaseMethods createWebElement
+INFO: 5. Scrollable
+Eyl 27, 2024 9:06:40 ÖS com.example.BaseMethods createWebElement
+INFO: Element is found: Scrollable
+Eyl 27, 2024 9:06:41 ÖS com.example.BaseMethods clickButton
+INFO: Clicked on the button: Scrollable
+{"logLevel":"debug","message":"Executing 'Search Element {} with Horizontal Swipe {} times' using 'class com.example.BaseMethods.findElementWithHorizontalSwipe"}
+Eyl 27, 2024 9:06:45 ÖS com.example.BaseMethods findElementWithHorizontalSwipe
+INFO: Element not found, retrying...
+Eyl 27, 2024 9:06:48 ÖS com.example.BaseMethods findElementWithHorizontalSwipe
+INFO: Element not found, retrying...
+Eyl 27, 2024 9:06:52 ÖS com.example.BaseMethods findElementWithHorizontalSwipe
+INFO: Element not found, retrying...
+Eyl 27, 2024 9:06:56 ÖS com.example.BaseMethods findElementWithHorizontalSwipe
+INFO: Element not found, retrying...
+Eyl 27, 2024 9:07:00 ÖS com.example.BaseMethods findElementWithHorizontalSwipe
+INFO: Element not found, retrying...
+Eyl 27, 2024 9:07:04 ÖS com.example.BaseMethods findElementWithHorizontalSwipe
+INFO: Element not found, retrying...
+Eyl 27, 2024 9:07:07 ÖS com.example.BaseMethods findElementWithHorizontalSwipe
+INFO: Element not found, retrying...
+Eyl 27, 2024 9:07:11 ÖS com.example.BaseMethods findElementWithHorizontalSwipe
+INFO: Element not found, retrying...
+Eyl 27, 2024 9:07:15 ÖS com.example.BaseMethods findElementWithHorizontalSwipe
+INFO: Element not found, retrying...
+Eyl 27, 2024 9:07:16 ÖS com.example.BaseMethods createWebElementForRetry
+INFO: TAB 30
+Eyl 27, 2024 9:07:16 ÖS com.example.BaseMethods createWebElementForRetry
+INFO: Element is found: TAB 30
+Eyl 27, 2024 9:07:16 ÖS com.example.BaseMethods findElementWithHorizontalSwipe
+INFO: -------------------------------[[AndroidDriver:  on ANDROID (681a05ca-5232-46fd-9bb1-b5371d740274)] -> xpath: //*[contains(@resource-id,'TAB 30') or contains(@text ,'TAB 30')]]-----------------------------------
+Eyl 27, 2024 9:07:16 ÖS com.example.BaseMethods findElementWithHorizontalSwipe
+INFO: Element found: [[AndroidDriver:  on ANDROID (681a05ca-5232-46fd-9bb1-b5371d740274)] -> xpath: //*[contains(@resource-id,'TAB 30') or contains(@text ,'TAB 30')]]
+Eyl 27, 2024 9:07:16 ÖS base.Base afterScenario
+INFO: ------------ Scenario is ending ------------
+Eyl 27, 2024 9:07:17 ÖS base.Base afterScenario
+INFO: Driver quit successfully.
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}

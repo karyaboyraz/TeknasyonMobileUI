@@ -1,0 +1,5 @@
+[
+	"/opt/homebrew/bin/gauge",
+	"run",
+	"--failed"
+]

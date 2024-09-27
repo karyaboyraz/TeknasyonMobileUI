@@ -1,1 +1,1 @@
-var index = {"Tags":{},"Specs":{"TeknasyonUI":["specs/ChargerPage_Scenarios/TeknasyonUI.html"]}};
+var index = {"Tags":{},"Specs":{"TeknasyonUI":["specs/TeknasyonUI.html"]}};

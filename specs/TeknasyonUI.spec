@@ -44,7 +44,6 @@ Scenario: 4
 *Check element existence "The fragment saves and restores this text." must be "visible"
 *Get Text Value from "frag1hide" and compare with "Hide"
 *Click button "frag1hide"
-*sout "buraya kadar gelindi"
 *Check element existence "The fragment saves and restores this text." must be "hidden"
 *Get Text Value from "frag1hide" and compare with "Show"
 *Click button "frag1hide"
