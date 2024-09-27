@@ -72,23 +72,9 @@ public class BaseMethods extends Base {
         Assert.assertEquals(isVisible, shouldBeVisible, "Element visibility mismatch: %s".formatted(ElementName));
     }
 
-
-
     public enum Visibility {
         visible,
         hidden
-    }
-
-    @Step("Click element <ElementName>")
-    public void clickElement(String ElementName) {
-        createWebElement(ElementName).click();
-        logger.info("Clicked on the element: %s".formatted(ElementName));
-    }
-
-    @Step("Click element with Xpath <path>")
-    public void clickElementWithXpath(String path) {
-        createWebElement(path).click();
-        logger.info("Clicked on the element: ");
     }
 
     @Step("Click button <ElementName>")
@@ -131,32 +117,6 @@ public class BaseMethods extends Base {
                 .pause(Duration.ofSeconds(2))
                 .release()
                 .perform();
-    }
-
-    @Step("Select <ElementName> from dropdown")
-    public void clickDropdownButton(String ElementName) {
-        String path = "//*[contains(@text , '" + ElementName + "')]";
-        WebElement element = findElementWithRetry(path, 15);
-        element.click();
-        logger.info(String.format("Clicked on the button: %s", ElementName));
-    }
-
-    public WebElement findElementWithRetry(String path, int retries) {
-        logger.info(path);
-        for (int i = 0; i < retries; i++) {
-            try {
-                WebElement element = new WebDriverWait(driver, Duration.ofSeconds(1)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(path)));
-                logger.info("-------------------------------" + element + "-----------------------------------");
-                if (element != null) {
-                    logger.info("Element found: " + element);
-                    return element;
-                }
-            } catch (TimeoutException e) {
-                swipeWithoutDirection();
-                logger.info("Element not found, retrying...");
-            }
-        }
-        throw new NoSuchElementException("Element not found after " + retries + " retries.");
     }
 
     @Step("Search Element <ElementName> with Swipe <retries> times")
@@ -232,16 +192,6 @@ public class BaseMethods extends Base {
         createWebElement(contextNotificationsTitle);
     }
 
-    @Step("Get Value from <elementName> and compare with <expectedValue>")
-    public void getValueFromElement(String elementName, String expectedValue) {
-        WebElement element = createWebElement(elementName);
-        String actualValue = element.getAttribute("value");
-        Assert.assertEquals(actualValue, expectedValue,
-                "The value of element '" + elementName + "' does not match the expected value.");
-
-        logger.info("Success: The value of '" + elementName + "' matches the expected value.");
-    }
-
     @Step("Get Text Value from <elementName> and compare with <expectedValue>")
     public void getTextValueFromElement(String elementName, String expectedValue) {
         WebElement element = createWebElement(elementName);
@@ -280,10 +230,5 @@ public class BaseMethods extends Base {
         scroll.addAction(finger.createPointerMove(Duration.ofMillis(600), PointerInput.Origin.viewport(), startX, endY));
         scroll.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
         driver.perform(List.of(scroll));
-    }
-
-    @Step("sout <text>")
-    public void soutElement(String text) throws InterruptedException {
-        System.out.println(text);
     }
 }

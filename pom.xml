@@ -33,14 +33,6 @@
             <version>${webdriver.manager.version}</version>
         </dependency>
 
-        <!-- JavaFaker -->
-        <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
-        <dependency>
-            <groupId>com.github.javafaker</groupId>
-            <artifactId>javafaker</artifactId>
-            <version>${javafaker.version}</version>
-        </dependency>
-
         <!-- Appium Java-Client -->
         <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
         <dependency>

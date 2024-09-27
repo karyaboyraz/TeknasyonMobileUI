@@ -4082,3 +4082,19 @@
 27-09-2024 20:10:54.488 [Gauge] [INFO] Gauge daemon initialized and listening on port: 59427
 27-09-2024 20:10:54.489 [Gauge] [DEBUG] Watching directory: /Users/testinium/Desktop/TeknasyonUIMobileTest/specs
 27-09-2024 20:10:54.489 [Gauge] [DEBUG] Found 2 files
+27-09-2024 20:16:51.902 [Gauge] [INFO] Initializing concepts cache with 0 concepts
+27-09-2024 20:16:51.903 [Gauge] [INFO] Initializing specs cache with 1 specs
+27-09-2024 20:16:51.903 [Gauge] [DEBUG] Adding specs from /Users/testinium/AquaProjects/TeknasyonMobileUI/specs/TeknasyonUI.spec
+27-09-2024 20:16:51.903 [Gauge] [INFO] Initializing steps cache with 1 steps
+27-09-2024 20:16:51.904 [Gauge] [INFO] Gauge daemon initialized and listening on port: 59781
+27-09-2024 20:16:51.905 [Gauge] [DEBUG] Watching directory: /Users/testinium/AquaProjects/TeknasyonMobileUI/specs
+27-09-2024 20:16:51.905 [Gauge] [DEBUG] Found 2 files
+27-09-2024 20:16:56.916 [Gauge] [DEBUG] Api Request Received: messageType:GetLanguagePluginLibPathRequest messageId:5 libPathRequest:{language:"java"}
+27-09-2024 20:16:56.918 [Gauge] [DEBUG] Sending API response: messageType:GetLanguagePluginLibPathResponse messageId:5 libPathResponse:{path:"/Users/testinium/.gauge/plugins/java/0.11.0/libs"}
+27-09-2024 20:17:33.587 [Gauge] [INFO] Initializing concepts cache with 0 concepts
+27-09-2024 20:17:33.588 [Gauge] [INFO] Initializing specs cache with 1 specs
+27-09-2024 20:17:33.588 [Gauge] [DEBUG] Adding specs from /Users/testinium/AquaProjects/TeknasyonMobileUI/specs/TeknasyonUI.spec
+27-09-2024 20:17:33.588 [Gauge] [INFO] Initializing steps cache with 1 steps
+27-09-2024 20:17:33.588 [Gauge] [INFO] Gauge daemon initialized and listening on port: 59843
+27-09-2024 20:17:33.589 [Gauge] [DEBUG] Watching directory: /Users/testinium/AquaProjects/TeknasyonMobileUI/specs
+27-09-2024 20:17:33.589 [Gauge] [DEBUG] Found 2 files
