@@ -17,7 +17,6 @@ Scenario: 1
 *Click button "Change Right"
 *Get Text Value from "right_text" and compare with "Right better than left"
 
-
 Scenario: 2
 ----------------
 *Click button "App"
@@ -25,7 +24,6 @@ Scenario: 2
 *Click button "List dialog"
 *Click button "Command one"
 *Check element existence "You selected: 0 , Command one" must be "visible"
-
 
 Scenario: 3
 ----------------
